@@ -1,0 +1,12 @@
+.list li{
+    display: inline-block;
+    margin-inline-end: 1.5rem;
+    margin-block-end: 1.25rem;
+    transition: all 0.3s;
+    font-size: 14px
+    ;
+}
+.list li:hover {
+    color: var(--hover-color);
+}
+

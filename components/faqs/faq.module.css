@@ -1,0 +1,19 @@
+.faq-wrapper {
+  padding-bottom: clamp(4rem, -2.3999999999999995rem + 10vw, 9.6rem);
+  padding-top: clamp(3rem, -1.7999999999999998rem + 7.5vw, 7.2rem);
+}
+.heading {
+  font-weight: 450;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-size: clamp(
+    2.3125rem,
+    -0.5089285714285716rem + 4.408482142857143vw,
+    4.78125rem
+  );
+
+  transform: translate(-0.06em);
+  margin-bottom: 4rem;
+  white-space: pre-wrap;
+  font-weight: 300;
+}

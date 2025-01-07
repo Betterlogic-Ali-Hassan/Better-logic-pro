@@ -1,0 +1,16 @@
+.logo-wrapper{
+    --footer-logo-height: 3.25rem
+    height: var(--footer-logo-height, 3.2rem);
+    margin-bottom: 2.4rem;
+    display: flex;
+    color: white;
+}
+.logo{
+    --footer-logo-width:9.125rem;
+    --footer-logo-height:3.25rem;
+    background-image: url('https://www.paypalobjects.com/marketing/web/logos/paypal-wordmark-monotone_new.svg');
+    width: var(--footer-logo-width, 12.07rem);
+        height: var(--footer-logo-height, 3.2rem);
+        background-size: contain;
+        
+}

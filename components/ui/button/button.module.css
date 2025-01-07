@@ -1,0 +1,26 @@
+.button{
+    padding: .75rem calc(2rem - var(--header-btn-border-width, 0rem));
+    border: var(--header-btn-border-width, .125rem) solid var(--bg-dark);
+    color: var(--text-color);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    min-width: 6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    transition: .2s cubic-bezier(0,.5,.5,1);
+    background-color: var(--bg-background);
+    font-weight: 500;
+    &:hover{
+        max-height: calc(3rem + 2* 0.15rem);
+    }
+}
+.btn-fill{
+  background-color: var(--bg-dark);
+  color: white;
+}
+.btn-fill:hover{
+        background-color: var(--hover-color);
+        color: var(--text-color);
+        height: auto;
+}
