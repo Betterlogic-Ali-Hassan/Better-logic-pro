@@ -7,6 +7,7 @@ import {
 import { Faqs } from "@/constant/faqs";
 import styles from "./faq.module.css";
 import { FiPlus } from "react-icons/fi";
+import { cn } from "@/lib/utils";
 
 export default function FAQs() {
   return (
@@ -18,12 +19,15 @@ export default function FAQs() {
           </div>
         </div>
 
-        <Accordion type='single' collapsible className=' '>
+        <Accordion type='single' collapsible>
           {Faqs.map((item, i) => (
             <AccordionItem
               key={i}
               value={`item- ${i + 1}`}
-              className=' pb-[3rem] border-b mb-[3rem] w-full'
+              className={cn(
+                " pb-[2.063rem] border-b mt-[3rem] w-full",
+                i === 0 && "mt-0"
+              )}
             >
               <AccordionTrigger className=' text-[25px] pb-2  font-light hover:no-underline '>
                 {item.question}

@@ -12,7 +12,7 @@ import styles from "../nav.module.css";
 import style from "./menu.module.css";
 import MenuCard from "./MenuCard";
 import MenuListItem from "./menuListItem";
-const Menu = () => {
+const Menu = ({ trigger }: { trigger: string }) => {
   return (
     <div>
       <NavigationMenu>
@@ -20,11 +20,11 @@ const Menu = () => {
           <NavigationMenuItem>
             <NavigationMenuTrigger
               className={cn(
-                "p-0 m-0 bg-transparent hover:bg-hover !text-black flex   ",
+                "p-0 m-0 bg-transparent hover:bg-hover !text-black flex",
                 styles["nav-item"]
               )}
             >
-              Personal
+              {trigger}
             </NavigationMenuTrigger>
             <NavigationMenuContent
               className='bg-white py-6 px-4 border border-border shadow-md rounded-[16px] overflow-hidden '

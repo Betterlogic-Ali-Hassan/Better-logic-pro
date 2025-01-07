@@ -12,7 +12,7 @@ const Header = () => {
           <Nav />
 
           <div className='flex items-center h-[3rem] relative max-w-max '>
-            <Button className='ml-[9px]'>Log In</Button>
+            <Button className='ml-[12px]'>Log In</Button>
             <Button className='ml-[9px]' btnDark>
               Sign Up
             </Button>

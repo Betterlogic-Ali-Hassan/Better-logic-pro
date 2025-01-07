@@ -7,13 +7,13 @@ const Nav = () => {
       <div className={styles.wrapper}>
         <ul className={styles["menu-list"]}>
           <li>
-            <Menu />
+            <Menu trigger='Personal' />
           </li>
           <li>
-            <button className={styles["nav-item"]}>Small Business</button>
+            <Menu trigger='Small Business' />
           </li>
           <li>
-            <button className={styles["nav-item"]}>Enterprise</button>
+            <Menu trigger='Enterprise' />
           </li>
           <li>
             <button className={styles["nav-item"]}>Developer</button>
