@@ -82,6 +82,9 @@ const Footer = () => {
           <li>
             <a href='#'>Partners</a>
           </li>
+          <li>
+            <a href='#'>Partners</a>
+          </li>
         </ul>
         <address className='text-sm not-italic text-white mt-[1.25rem]'>
           PayPal is located at 2211 N 1st St. San Jose, CA 95131
