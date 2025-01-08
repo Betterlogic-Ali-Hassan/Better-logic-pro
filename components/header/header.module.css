@@ -1,6 +1,7 @@
 .header {
   max-height: 5.5rem;
   min-height: 5.5rem;
+  border-bottom: 1px solid var(--border-color);
   background-color: #fff;
   padding: 0;
   height: 100%;
@@ -25,4 +26,53 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 91.875rem) {
+  .container {
+    padding-inline: 0;
+    max-width: 100vw;
+    grid-column-gap: clamp(
+      1rem,
+      0.7224278312361214rem + 1.1843079200592153vw,
+      2rem
+    );
+    position: relative;
+    display: grid;
+    grid-template-columns: 8rem 0 repeat(12, 1fr) 0 8rem;
+  }
+}
+@media (min-width: 91.875rem) {
+  .wrapper {
+    max-width: initial;
+    width: 100%;
+    padding-inline: 0;
+    grid-column-start: 3;
+    grid-column-end: 15;
+  }
+}
+@media (min-width: 36rem) {
+  .wrapper {
+    max-width: 48rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
+@media (min-width: 47rem) {
+  .wrapper {
+    max-width: 63rem;
+  }
+}
+@media (min-width: 64rem) {
+  .wrapper {
+    max-width: 71rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 72rem) {
+  .wrapper {
+    max-width: 86.875rem;
+    padding: 1.25rem 2rem;
+  }
 }

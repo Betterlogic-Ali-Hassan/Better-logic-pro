@@ -6,8 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className='bg-bg-dark py-[4vw]'>
-      <div className='my-container'>
+    <footer className={styles.container}>
+      <div className={styles.footer}>
         <FooterLogo />
         <div className='flex items-center justify-between p-0 m-0 flex-wrap float-none'>
           <ul className={cn("flex flex-wrap p-0 m-0 text-white", styles.list)}>
@@ -90,7 +90,7 @@ const Footer = () => {
           PayPal is located at 2211 N 1st St. San Jose, CA 95131
         </address>
       </div>
-    </div>
+    </footer>
   );
 };
 

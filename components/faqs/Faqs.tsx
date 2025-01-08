@@ -11,21 +11,20 @@ import { cn } from "@/lib/utils";
 
 export default function FAQs() {
   return (
-    <div className='my-container'>
-      <section className={styles["faq-wrapper"]}>
-        <div className={styles.headline}>
-          <div>
-            <h2 className={styles.heading}>Frequently asked questions</h2>
-          </div>
+    <section className={styles.container}>
+      <div className={styles.headline}>
+        <div>
+          <h2 className={styles.heading}>Frequently asked questions</h2>
         </div>
-
+      </div>
+      <div className={styles["faq-wrapper"]}>
         <Accordion type='single' collapsible>
           {Faqs.map((item, i) => (
             <AccordionItem
               key={i}
               value={`item- ${i + 1}`}
               className={cn(
-                " pb-[2.063rem] border-b mt-[3rem] w-full",
+                " pb-[2.063rem] border-b-2 mt-[3rem] w-full",
                 i === 0 && "mt-0"
               )}
             >
@@ -44,7 +43,7 @@ export default function FAQs() {
             </AccordionItem>
           ))}
         </Accordion>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

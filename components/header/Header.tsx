@@ -6,7 +6,7 @@ import Button from "../ui/button/Button";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className='p-0 bg-background h-full border-b border-border'>
+      <div className={styles.container}>
         <div className={styles.wrapper}>
           <Logo />
           <Nav />
