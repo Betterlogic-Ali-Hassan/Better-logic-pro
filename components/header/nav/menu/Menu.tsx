@@ -1,26 +1,43 @@
 "use client";
-import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import styles from "../nav.module.css";
 import style from "./menu.module.css";
 import MenuCard from "./MenuCard";
 import MenuListItem from "./menuListItem";
 import { cn } from "@/lib/utils";
-const Menu = ({ trigger }: { trigger: string }) => {
-  const [open, setOpen] = useState(false);
+
+interface MenuProps {
+  trigger: string;
+  menuId: number;
+  activeMenu: number | null;
+  setActiveMenu: React.Dispatch<React.SetStateAction<number | null>>;
+}
+
+const Menu = ({ trigger, menuId, activeMenu, setActiveMenu }: MenuProps) => {
+  const isOpen = activeMenu === menuId;
+
   return (
-    <>
+    <div
+      className={cn("relative")}
+      onMouseEnter={() => setActiveMenu(menuId)}
+      onMouseLeave={() => setActiveMenu(null)}
+    >
       <div
         className={cn(
-          "cursor-pointer hover:bg-hover hover:!text-black",
+          "cursor-pointer hover:bg-hover hover:!text-black flex items-center",
           styles["nav-item"]
         )}
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
       >
         {trigger}
+        <ChevronDown
+          className={cn(
+            "ml-1 h-4 w-4 transition-all duration-200 ",
+            isOpen && "rotate-180"
+          )}
+        />
       </div>
-      {open && (
-        <div className='absolute top-full z-50'>
+      {isOpen && (
+        <div className='absolute top-full z-50 '>
           <div className={style["card-wrapper"]}>
             <div className={style["grid-wrapper"]}>
               <div className={style.top}>ALL-IN-ONE PLATFORM</div>
@@ -42,7 +59,7 @@ const Menu = ({ trigger }: { trigger: string }) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
