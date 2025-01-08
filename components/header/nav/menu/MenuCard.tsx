@@ -4,10 +4,7 @@ import styles from "./menu.module.css";
 import { cn } from "@/lib/utils";
 const MenuCard = ({ selected }: { selected: boolean }) => {
   return (
-    <Link
-      href='#'
-      className={cn("mr-1", styles.card, selected && "bg-[#f2f0ed]")}
-    >
+    <Link href='#' className={cn(styles.card, selected && "bg-[#f2f0ed]")}>
       <div>
         <svg
           width='28'
