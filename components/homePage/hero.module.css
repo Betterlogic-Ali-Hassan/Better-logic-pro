@@ -184,7 +184,7 @@
   line-height: 1.5;
   letter-spacing: 0;
   font-size: clamp(1rem, 0.7142857142857143rem + 0.4464285714285714vw, 1.25rem);
-  max-width: 40em;
+  max-width: 50em;
   white-space: pre-wrap;
 }
 .badge {

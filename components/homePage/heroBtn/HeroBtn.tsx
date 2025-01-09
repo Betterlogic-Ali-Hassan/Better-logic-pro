@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 const HeroBtn = () => {
   return (
-    <div className='flex text-center flex-col gap-6'>
+    <div className='flex text-center flex-col gap-6 mt-4'>
       <div className='flex items-start justify-center gap-4 flex-wrap'>
         <Link
           href='#'
