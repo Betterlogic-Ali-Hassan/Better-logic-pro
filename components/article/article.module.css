@@ -1,0 +1,27 @@
+.wrapper{
+    grid-column-start: 3;
+    grid-column-end: -3;
+    align-self: auto;
+    display: block;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+    .case-wrap{
+        border-radius: 32px;
+        padding: 32px;
+    }
+}
+.case-wrap{
+    background-color: #fff;
+    border: 1px solid #c5d6e0;
+    border-radius: 20px;
+    padding: 16px 20px;
+}
+.heading{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}

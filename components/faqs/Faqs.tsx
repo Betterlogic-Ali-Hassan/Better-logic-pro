@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 export default function FAQs() {
   return (
-    <section className={styles.container}>
+    <section className='my-container !gap-y-0'>
       <div className={styles.headline}>
         <div>
           <h2 className={styles.heading}>Frequently asked questions</h2>

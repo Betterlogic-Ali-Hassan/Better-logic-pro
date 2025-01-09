@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const Hero = () => {
   return (
     <div className={styles.body}>
-      <section className={styles.container}>
+      <section className='my-container'>
         <div className={styles["hero-content"]}>
           <div className={styles["text-group"]}>
             <div className='flex gap-2 items-center text-center'>
@@ -18,17 +18,16 @@ const Hero = () => {
             <div className={styles.margin}>
               <h2 className={styles["headline-text"]}>Better History</h2>
               <h3 className={styles["sub-heading"]}>
-                Refresh Page Automatically With Page Monitor
+                Organize and Manage Your Browsing History Effortlessly
               </h3>
             </div>
             <div className={styles.margin}>
               <p className={cn("text-pretty", styles["para-text"])}>
-                Welcome to Auto Refresh Plus – Your ultimate solution for
-                automating webpage refreshes and monitoring dynamic content
-                effortlessly. With a suite of powerful features, Auto Refresh
-                Plus enhances your browsing experience by ensuring you&apos;re
-                always up-to-date with the latest changes on your favorite
-                websites
+                Welcome to Better History – Your ultimate tool for enhancing
+                your browser’s history management. With an intuitive interface
+                and powerful features, Better History lets you search, delete,
+                and organize your browsing history with ease. Stay in control of
+                your online activity and make your browsing experience seamless.
               </p>
             </div>
             <div className={styles.margin}>

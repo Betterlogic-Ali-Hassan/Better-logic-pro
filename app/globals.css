@@ -26,6 +26,108 @@ body {
     @apply bg-background text-text;
   }
 }
+.my-container {
+  row-gap: 2rem;
+  min-height: auto;
+  --inner-cols--num: 12;
+  --edge-rail-col--width: 8rem;
+  --col-width: calc(
+    (100% - calc(var(--edge-rail-col--width) * 2) - calc(var(--grid-gap) * 15)) /
+      12
+  );
+  --grid-gap: clamp(
+    1rem,
+    0.8226111636707663rem + 0.7568590350047304vw,
+    1.5rem
+  ) !important;
+  --grid-fluid-clamp-value--sm: clamp(
+    0.5rem,
+    -0.29999999999999993rem + 1.25vw,
+    1.2rem
+  );
+  --grid-fluid-clamp-value--md: clamp(
+    1rem,
+    -0.5999999999999999rem + 2.5vw,
+    2.4rem
+  );
+  --grid-fluid-clamp-value--lg: clamp(
+    2rem,
+    -1.1999999999999997rem + 5vw,
+    4.8rem
+  );
+  --grid-fluid-clamp-value--xl: clamp(
+    3rem,
+    -1.7999999999999998rem + 7.5vw,
+    7.2rem
+  );
+  --grid-fluid-clamp-value--2xl: clamp(
+    4rem,
+    -2.3999999999999995rem + 10vw,
+    9.6rem
+  );
+  --grid-fluid-clamp-value--3xl: clamp(
+    6rem,
+    -3.5999999999999996rem + 15vw,
+    14.4rem
+  );
+  padding-bottom: clamp(0.5rem, -0.29999999999999993rem + 1.25vw, 1.2rem);
+  grid-template-rows: minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  z-index: 0;
+  overflow: clip;
+  position: relative;
+  display: grid;
+  --outer-rail-col--width: 0;
+  --inner-rail-col--width: 1fr;
+  grid-column-gap: var(--grid-gap);
+  grid-template-columns:
+    var(--edge-rail-col--width) var(--outer-rail-col--width)
+    repeat(var(--inner-cols--num), var(--inner-rail-col--width)) var(
+      --outer-rail-col--width
+    )
+    var(--edge-rail-col--width);
+}
+@media (min-width: 41.0625rem) {
+  .my-container {
+    row-gap: clamp(2rem, -1.1999999999999997rem + 5vw, 4.8rem);
+  }
+}
+@media only screen and (min-width: 91.875rem) {
+  .my-container {
+    grid-row-gap: 4vw;
+  }
+}
+@media only screen and (min-width: 89.5rem) {
+  .my-container {
+    --inner-rail-col--width: calc(
+      (67.5rem - calc((var(--inner-cols--num) - 1) * 1.5rem)) /
+        var(--inner-cols--num)
+    ) !important;
+  }
+}
+@media only screen and (min-width: 89.5rem) {
+  .my-container {
+    --edge-rail-col--width: clamp(
+      8rem,
+      -24.278688524590166rem + 36.0655737704918vw,
+      19rem
+    );
+    --outer-rail-col--width: 1fr;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .my-container {
+    --inner-cols--num: 12;
+    --edge-rail-col--width: 8rem;
+    --col-width: calc(
+      (
+          100% - calc(var(--edge-rail-col--width) * 2) -
+            calc(var(--grid-gap) * 15)
+        ) / 12
+    );
+  }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 20px !important;
