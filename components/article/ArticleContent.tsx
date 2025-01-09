@@ -60,17 +60,20 @@ const ArticleContent = () => {
           for purchasing and selling assets. Wider spreads show low liquidity,
           making it more difficult to trade due to higher prices.
         </li>
+        <br />
         <li>
           <strong>Price discovery:</strong> The bid and ask prices reflect the
           current market price for an asset, allowing buyers and sellers to
           settle on a certain price that’s generally accepted in the market.
         </li>
+        <br />
         <li>
           <strong>Trading costs:</strong> The bid-ask spreads have a huge impact
           on transaction costs. Buyers, especially day traders, have to observe
           the market price changes carefully as a wider spread can lead to
           higher transaction costs.
         </li>
+        <br />
         <li>
           <strong>Market volatility:</strong> When there’s a disagreement on an
           asset’s price, it can lead to a severe imbalance, resulting in high
