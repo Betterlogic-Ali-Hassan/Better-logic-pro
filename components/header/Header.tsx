@@ -3,6 +3,7 @@ import styles from "./header.module.css";
 import Logo from "./logo/Logo";
 import Nav from "./nav/Nav";
 import Button from "../ui/button/Button";
+// import MobileHeader from "./mobileheader/MobileHeader";
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -17,6 +18,7 @@ const Header = () => {
               Sign Up
             </Button>
           </div>
+          {/* <MobileHeader /> */}
         </div>
       </div>
     </header>
