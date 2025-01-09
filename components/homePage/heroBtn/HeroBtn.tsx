@@ -10,7 +10,7 @@ const HeroBtn = () => {
         <Link
           href='#'
           className={cn(
-            "bg-black text-white hover:bg-[#60cdff] !flex items-center gap-2 !max-h-[52.28px] !min-h-[52.28px]",
+            "bg-black text-white hover:bg-[#60cdff] !flex items-center gap-2 !max-h-[62px] !min-h-[62px]",
             styles["hero-btn"]
           )}
         >
