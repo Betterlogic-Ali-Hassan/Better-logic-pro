@@ -3,8 +3,7 @@ import styles from "./article.module.css";
 const ArticleContent = () => {
   return (
     <article className={styles.prose}>
-      <h2 className={styles.heading}>What Is Bid Price vs Ask Price</h2>
-      <p>
+      <p className='pt-6'>
         In the most basic sense, the bidding price is the highest amount a
         person is willing to pay for an asset. The asking price is what the
         seller is willing to accept. This concept is related directly to supply
