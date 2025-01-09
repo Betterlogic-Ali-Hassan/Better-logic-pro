@@ -23,42 +23,17 @@ export default function Slider() {
         slidesPerView='auto'
         className='mySwiper'
       >
-        <SwiperSlide className='max-w-max'>
-          <Image
-            src='/hero.webp'
-            alt='hero'
-            height={552}
-            width={1000}
-            className='object-cover'
-          />
-        </SwiperSlide>
-        <SwiperSlide className='max-w-max'>
-          <Image
-            src='/hero.webp'
-            alt='hero'
-            height={552}
-            width={1000}
-            className='object-cover'
-          />
-        </SwiperSlide>
-        <SwiperSlide className='max-w-max'>
-          <Image
-            src='/hero.webp'
-            alt='hero'
-            height={552}
-            width={1000}
-            className='object-cover'
-          />
-        </SwiperSlide>
-        <SwiperSlide className='max-w-max'>
-          <Image
-            src='/hero.webp'
-            alt='hero'
-            height={552}
-            width={1000}
-            className='object-cover'
-          />
-        </SwiperSlide>
+        {[0, 1, 2, 3].map((id) => (
+          <SwiperSlide className='max-w-max' key={id}>
+            <Image
+              src='/hero.webp'
+              alt='hero'
+              height={552}
+              width={1000}
+              className='object-cover rounded-[16px]'
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
