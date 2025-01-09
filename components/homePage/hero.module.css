@@ -193,3 +193,16 @@
   aspect-ratio: 16 / 9;
   position: relative;
 }
+.badge {
+  align-items: center;
+  background-color: black;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  min-height: 20px;
+  padding: 0 10px;
+}

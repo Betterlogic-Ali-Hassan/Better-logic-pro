@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./hero.module.css";
 import HeroBtn from "./heroBtn/HeroBtn";
 import Slider from "./heroSlider/Slider";
+import HeroRating from "./HeroRating";
 
 const Hero = () => {
   return (
@@ -27,6 +28,19 @@ const Hero = () => {
             </div>
             <div className={styles.margin}>
               <HeroBtn />
+              <p className='mt-8 text-[#071d2b]'>
+                Also available for{" "}
+                <a
+                  href='#'
+                  className='font-light underline hover:no-underline mr-1'
+                >
+                  Edge,
+                </a>{" "}
+                <a href='#' className='font-light underline hover:no-underline'>
+                  Opera
+                </a>
+              </p>
+              <HeroRating />
             </div>
           </div>
         </div>
