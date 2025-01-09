@@ -26,13 +26,33 @@ body {
     @apply bg-background text-text;
   }
 }
-.my-container {
-  max-width: 980px;
-  margin: 0 auto;
-  width: 100%;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 28px !important;
 }
-@media (min-width: 1400px) {
-  .my-container {
-    max-width: 1024px;
-  }
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  height: 64px !important;
+  width: 64px !important;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 0.295);
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 20px !important;
+  left: 50px !important;
+  text-align: left !important;
+  bottom: auto !important;
+}
+.swiper-pagination-bullet {
+  width: 120px !important;
+  height: 4px !important;
+  border-radius: 5px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
 }

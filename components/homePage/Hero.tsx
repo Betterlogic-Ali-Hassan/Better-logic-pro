@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./hero.module.css";
 import HeroBtn from "./heroBtn/HeroBtn";
-import Image from "next/image";
+import Slider from "./heroSlider/Slider";
 
 const Hero = () => {
   return (
@@ -34,13 +34,7 @@ const Hero = () => {
           <div className={styles["media-container"]}>
             <div className={styles["media-frame"]}>
               <picture className='flex items-center justify-center w-full'>
-                <Image
-                  src='/hero.webp'
-                  alt='hero'
-                  height={552}
-                  width={1000}
-                  className='object-cover'
-                />
+                <Slider />
               </picture>
             </div>
           </div>
