@@ -12,7 +12,7 @@ const Hero = () => {
         <div className={styles["hero-content"]}>
           <div className={styles["text-group"]}>
             <div className='flex gap-2 items-center text-center'>
-              <h1 className={styles["eyebrow-text"]}>How PayPal works</h1>
+              <h1 className={styles["eyebrow-text"]}>Chrome Extension</h1>
             </div>
 
             <div className={styles.margin}>
