@@ -20,8 +20,14 @@
     padding: 16px 20px;
 }
 .heading{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 300;
     margin-bottom: 24px;
     margin-top: 8px;
+}
+.prose p {
+    font-size: 18px;
+}
+.prose li {
+    font-size: 18px;
 }

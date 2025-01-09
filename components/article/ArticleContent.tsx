@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./article.module.css";
 const ArticleContent = () => {
   return (
-    <article className='prose'>
+    <article className={styles.prose}>
       <h2 className={styles.heading}>What Is Bid Price vs Ask Price</h2>
       <p>
         In the most basic sense, the bidding price is the highest amount a
