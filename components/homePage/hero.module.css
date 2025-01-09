@@ -166,6 +166,14 @@
   font-weight: 300;
   text-align: center;
 }
+.sub-heading {
+  font-size: 56px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 14em;
+  letter-spacing: -0.02em;
+  line-height: 69px;
+}
 @media (min-width: 1635px) {
   .headline-text {
     max-width: 11.5em;
@@ -176,8 +184,21 @@
   line-height: 1.5;
   letter-spacing: 0;
   font-size: clamp(1rem, 0.7142857142857143rem + 0.4464285714285714vw, 1.25rem);
-  max-width: 30em;
+  max-width: 40em;
   white-space: pre-wrap;
+}
+.badge {
+  align-items: center;
+  background-color: black;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  min-height: 20px;
+  padding: 0 10px;
 }
 .media-container {
   width: 100%;
@@ -192,17 +213,4 @@
   transform: none;
   aspect-ratio: 16 / 9;
   position: relative;
-}
-.badge {
-  align-items: center;
-  background-color: black;
-  border-radius: 12px;
-  color: #fff;
-  display: flex;
-  font-size: 12px;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  min-height: 20px;
-  padding: 0 10px;
 }

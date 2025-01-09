@@ -3,6 +3,7 @@ import styles from "./hero.module.css";
 import HeroBtn from "./heroBtn/HeroBtn";
 import Slider from "./heroSlider/Slider";
 import HeroRating from "./HeroRating";
+import { cn } from "@/lib/utils";
 
 const Hero = () => {
   return (
@@ -15,15 +16,19 @@ const Hero = () => {
             </div>
 
             <div className={styles.margin}>
-              <h2 className={styles["headline-text"]}>
-                It’s a smart, secure, flexible way to pay.
-              </h2>
+              <h2 className={styles["headline-text"]}>Better History</h2>
+              <h3 className={styles["sub-heading"]}>
+                Refresh Page Automatically With Page Monitor
+              </h3>
             </div>
             <div className={styles.margin}>
-              <p className={styles["para-text"]}>
-                Speed through checkout online and in stores. Earn cash back with
-                everyday offers. Send money across the table or across the
-                globe. And manage it all with one account.
+              <p className={cn("text-pretty", styles["para-text"])}>
+                Welcome to Auto Refresh Plus – Your ultimate solution for
+                automating webpage refreshes and monitoring dynamic content
+                effortlessly. With a suite of powerful features, Auto Refresh
+                Plus enhances your browsing experience by ensuring you&apos;re
+                always up-to-date with the latest changes on your favorite
+                websites
               </p>
             </div>
             <div className={styles.margin}>
