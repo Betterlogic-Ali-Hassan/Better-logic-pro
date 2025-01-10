@@ -1,0 +1,30 @@
+.wrapper {
+  align-self: auto;
+  display: block;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  grid-column-start: 3;
+  grid-column-end: -3;
+  z-index: 1;
+}
+.btn {
+  padding: 0.75rem calc(2rem - var(--header-btn-border-width, 0rem));
+  border: var(--header-btn-border-width, 0.125rem) solid var(--bg-dark);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  min-width: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 2rem;
+  transition: 0.2s cubic-bezier(0, 0.5, 0.5, 1);
+  background-color: var(--bg-dark);
+  color: white;
+  font-weight: 500;
+  &:hover {
+    max-height: calc(3rem + 2 * 0.15rem);
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    height: auto;
+  }
+}

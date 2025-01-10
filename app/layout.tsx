@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 const font = localFont({
   display: "swap",
   variable: "--font-sans",
@@ -39,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn(font.variable, " bg-background text-text")}>
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
