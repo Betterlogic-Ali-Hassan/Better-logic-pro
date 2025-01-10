@@ -12,6 +12,7 @@ import { FiMenu } from "react-icons/fi";
 import Button from "@/components/ui/button/Button";
 import { ChevronDown, X } from "lucide-react";
 import MenuItems from "../nav/menu/MenuItems";
+import { cn } from "@/lib/utils";
 
 const MobileHeader = () => {
   const [expanded, setExpanded] = useState<number | null>(null);
@@ -43,9 +44,8 @@ const MobileHeader = () => {
             {sheetOpen ? <X size={22} /> : <FiMenu size={22} />}
           </SheetTrigger>
           <SheetContent
-            className='overflow-y-auto'
+            className={cn("overflow-y-auto ", styles.sheet)}
             side='left'
-            style={{ zIndex: "1100", height: "calc(100vh - 76px)" }}
           >
             <SheetHeader>
               <SheetTitle className='opacity-0 p-0 m-0'></SheetTitle>

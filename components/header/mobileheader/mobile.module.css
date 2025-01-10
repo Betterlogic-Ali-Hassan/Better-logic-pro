@@ -9,3 +9,7 @@
   align-items: center;
   justify-content: space-between;
 }
+.sheet {
+  max-height: calc(100vh - 76px);
+  z-index: 1100;
+}
