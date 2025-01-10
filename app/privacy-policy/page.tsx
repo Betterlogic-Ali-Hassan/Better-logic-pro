@@ -3,7 +3,7 @@ import styles from "@/components/article/article.module.css";
 import { cn } from "@/lib/utils";
 const page = () => {
   return (
-    <div className='min-h-screen  xl:max-w-[1024px] mx-auto pt-[130px] max-xl:px-6  max-w-[768px]  '>
+    <div className='min-h-screen  xl:max-w-[1024px] mx-auto pt-[130px] max-xl:px-6  max-w-[768px] pb-2 '>
       <article className={styles.prose}>
         <h1 className='text-[64px] font-light mb-8 max-sm:text-[40px]'>
           Privacy Policy
