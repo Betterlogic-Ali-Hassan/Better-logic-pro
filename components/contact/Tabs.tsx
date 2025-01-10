@@ -24,7 +24,7 @@ const Tabs = () => {
             key={index}
             onClick={() => handleTabClick(index)}
             className={cn(
-              "flex items-center justify-center rounded-full bg-transparent text-black  hover:bg-hover p-4 cursor-pointer transition-all duration-200 border-2 border-black hover:text-black font-medium min-w-[200px] text-base",
+              "flex items-center justify-center rounded-full bg-transparent text-black  hover:bg-hover p-3 cursor-pointer transition-all duration-200 border-2 border-black hover:text-black font-medium min-w-[160px] text-base",
               tab.isActive && "bg-hover text-black"
             )}
           >

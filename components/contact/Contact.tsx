@@ -57,7 +57,7 @@ const Contact = () => {
             type='email'
             name='email'
             placeholder='Email'
-            className=' h-[48px] p-4'
+            className=' h-[48px] p-4 '
             required
           />
           <ValidationError
