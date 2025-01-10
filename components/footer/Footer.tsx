@@ -53,10 +53,10 @@ const Footer = () => {
           )}
         >
           <li>
-            <a href='#'>About</a>
+            <a href='/contact'>Contact</a>
           </li>
           <li>
-            <a href='#'>Newsroom</a>
+            <a href='/privacy-policy'>Privacy Policy</a>
           </li>
           <li>
             <a href='#'>Fees</a>
