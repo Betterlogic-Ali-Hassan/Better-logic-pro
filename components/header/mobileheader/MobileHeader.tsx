@@ -4,6 +4,7 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import styles from "./mobile.module.css";
@@ -47,6 +48,7 @@ const MobileHeader = () => {
             style={{ zIndex: "1100", height: "calc(100vh - 76px)" }}
           >
             <SheetHeader>
+              <SheetTitle className='opacity-0 p-0 m-0'></SheetTitle>
               <nav>
                 <ul className={styles.list}>
                   {["Personal", "Small Business", "Enterprise"].map(

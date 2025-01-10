@@ -142,3 +142,11 @@
     max-width: 100% !important;
   }
 }
+@media (max-width: 768px) {
+  .sub-heading {
+    font-size: 22px !important;
+    line-height: 39px !important;
+    margin: 6px 0;
+    max-width: 100% !important;
+  }
+}
