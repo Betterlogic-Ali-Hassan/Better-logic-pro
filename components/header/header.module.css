@@ -20,6 +20,7 @@
     background-color: var(--bg-background);
   }
 }
+
 .wrapper {
   max-width: 86.875rem;
   padding: 1.25rem 2rem;
@@ -69,10 +70,23 @@
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
 }
 @media (min-width: 72rem) {
   .wrapper {
     max-width: 86.875rem;
     padding: 1.25rem 2rem;
+  }
+}
+@media (max-width: 64rem){
+  .header{
+    min-height: 76px;
+    max-height: 76px;
+  }
+  .wrapper{
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

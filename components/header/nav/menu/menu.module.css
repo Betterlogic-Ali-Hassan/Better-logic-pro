@@ -7,6 +7,7 @@
   inset: 41px auto auto 0%;
   box-shadow: 0 2px 16px #00000014;
 }
+
 .grid-wrapper {
   margin: 0;
 }
@@ -81,4 +82,35 @@
   flex-direction: column;
   min-width: 200px;
   display: flex;
+}
+
+@media  (max-width: 1024px){
+  .card-wrapper {
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+    inset: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+  .top {
+       border-bottom: 1px solid #f2f0ed;
+       padding-bottom: 8px;
+  }
+  .divider {
+    background-color: #f2f0ed;
+    width: 100%;
+    height: 1px;
+    margin: 8px 0
+  }
+  .wrapper {
+    max-width: 100% !important;
+  }
+  .links{
+    grid-row-gap: 16px;
+  }
 }

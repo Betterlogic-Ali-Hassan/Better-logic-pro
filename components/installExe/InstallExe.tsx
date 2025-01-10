@@ -30,7 +30,7 @@ const InstallExe = () => {
               </p>
             </div>
             <div className='module-button_repeater inner-wrapper'></div>
-            <div className='flex items-center justify-center gap-6 pb-[56px]'>
+            <div className='flex items-center justify-center gap-6 pb-[56px] flex-wrap'>
               <HeroBtn />
               <HeroBtn
                 className='bg-blue-500 !border-blue-500 '

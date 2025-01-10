@@ -32,7 +32,7 @@ export default function FAQs() {
                 index === 0 ? "mt-0" : "mt-[3rem]"
               )}
             >
-              <AccordionTrigger className='text-[25px] pb-2 font-light hover:no-underline flex justify-between items-center'>
+              <AccordionTrigger className='md:text-[25px] text-xl pb-2 font-light hover:no-underline flex justify-between items-center'>
                 {faq.question}
                 <FiPlus
                   className='group-data-[state=open]:rotate-45 transition-transform duration-300 text-[#696969]'

@@ -30,7 +30,7 @@ export default function Slider() {
               alt='hero'
               height={552}
               width={1000}
-              className='object-cover rounded-[16px]'
+              className='object-cover rounded-[16px] select-none pointer-events-none'
             />
           </SwiperSlide>
         ))}

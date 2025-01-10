@@ -6,6 +6,11 @@
   position: static;
   height: 3rem;
 }
+@media (max-width: 1024px) {
+  .nav {
+    display: none !important;
+  }
+}
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -53,9 +58,9 @@
     transition-property: inset, opacity, background-color;
     will-change: inset, opacity, background-color;
   }
-  &:hover{
+  &:hover {
     color: #002994;
-    border-color: var(--border-color)  ;
+    border-color: var(--border-color);
   }
 }
 .menu-icon {

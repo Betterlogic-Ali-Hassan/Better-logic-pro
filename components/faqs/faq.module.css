@@ -31,3 +31,8 @@
   grid-column-end: -3;
   z-index: 1;
 }
+@media (max-width: 500px) {
+  .heading {
+    font-size: 28px !important;
+  }
+}

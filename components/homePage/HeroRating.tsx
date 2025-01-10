@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./hero.module.css";
 const HeroRating = () => {
   return (
-    <div className='mt-6 mb-2 flex text-sm'>
+    <div className='mt-6 mb-2 flex text-sm flex-wrap justify-center gap-4'>
       <div className='flex gap-1 '>
         <span>
           <svg viewBox='0 0 320 320' height={20} width={20}>
@@ -71,7 +71,7 @@ const HeroRating = () => {
           </svg>
         </span>
       </div>
-      <span className='flex items-center gap-[6px] mr-[10px] ml-4'>
+      <span className='flex items-center gap-[6px]  '>
         <span className={styles.badge}>4.9</span>
         17.2K reviews on
       </span>

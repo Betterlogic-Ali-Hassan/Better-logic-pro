@@ -41,3 +41,12 @@
 .list li:hover {
   color: var(--hover-color);
 }
+@media (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1392px;
+    padding: 32px 24px;
+    width: 100%;
+    display: inline-block;
+  }
+}
