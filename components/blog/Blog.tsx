@@ -19,7 +19,7 @@ const Blog = () => {
         </div>
       </section>
       <div className='relative mb-8 h-full'>
-        <div className='blog-container h-full absolute right-0 left-0'>
+        <div className='blog-container h-full absolute right-0 left-0 max-lg:hidden'>
           <div className='flex justify-end -mr-12 mb-0 h-full'>
             <div className='self-start top-[136px] sticky'>
               <div className='flex flex-wrap max-w-full'>
@@ -59,7 +59,7 @@ const Blog = () => {
           <div className='my-6'>
             <div
               className={cn(
-                "mt-12 mb-10 min-[1440px]:gap-x-16 lg:gap-x-12 sm:gap-x-10 gap-x-[28px]",
+                "sm:mt-12 mt-8 sm:mb-10 mb-0 min-[1440px]:gap-x-16 lg:gap-x-12 sm:gap-x-10 gap-x-[28px]",
                 style.wrap
               )}
             >

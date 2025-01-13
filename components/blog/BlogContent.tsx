@@ -8,13 +8,13 @@ const BlogContent = () => {
     <div className='blog-container'>
       <div
         className={cn(
-          "mt-12 mb-10 min-[1440px]:gap-x-16 lg:gap-x-12 sm:gap-x-10 gap-x-[28px]",
+          "sm:mt-12 mt-0 sm:mb-10 mb-6 min-[1440px]:gap-x-16 lg:gap-x-12 sm:gap-x-10 gap-x-[28px]",
           style.wrap
         )}
       >
         <div
           className={cn(
-            "sticky top-[136px] self-start mt-[40px]",
+            "sticky top-[136px] self-start sm:mt-[40px] lg:block hidden'",
             style["grid-item"]
           )}
         >
