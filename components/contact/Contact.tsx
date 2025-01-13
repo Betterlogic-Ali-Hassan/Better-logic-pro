@@ -3,7 +3,6 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Alert, AlertDescription } from "../ui/alert";
 import { useForm, ValidationError } from "@formspree/react";
-import { Input } from "../ui/input";
 import { Checkbox } from "../ui/checkbox";
 import { Loader2 } from "lucide-react";
 import { Textarea } from "../ui/textarea";
@@ -37,12 +36,12 @@ const Contact = () => {
       <br />
       <form onSubmit={handleSubmit}>
         <div className='flex flex-col gap-4 mb-8'>
-          <Input
+          <input
             id='name'
             type='text'
             name='name'
             placeholder='Name'
-            className=' h-[48px] p-4'
+            className={styles.input}
             required
           />
           <ValidationError
@@ -52,12 +51,12 @@ const Contact = () => {
             className='text-red-500'
           />
 
-          <Input
+          <input
             id='email'
             type='email'
             name='email'
             placeholder='Email'
-            className=' h-[48px] p-4 '
+            className={styles.input}
             required
           />
           <ValidationError
@@ -80,6 +79,7 @@ const Contact = () => {
             id='message'
             name='message'
             placeholder='Message'
+            className={styles.input}
             required
           />
           <ValidationError
@@ -91,10 +91,10 @@ const Contact = () => {
         </div>
 
         <div className='flex items-center space-x-3 mb-6'>
-          <Checkbox id='terms' required className='h-5 w-5' />
+          <Checkbox id='terms' required className={styles.checkbox} />
           <label
             htmlFor='terms'
-            className='text-sm text-[#737373] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
+            className='!text-base text-black leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
           >
             By checking this box, I accept the Privacy Policy and data
             processing

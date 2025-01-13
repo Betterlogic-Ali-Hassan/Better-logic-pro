@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import BackToTop from "@/components/BackToTop";
 const font = localFont({
   display: "swap",
   variable: "--font-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

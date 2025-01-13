@@ -4,6 +4,7 @@ import HeroBtn from "./heroBtn/HeroBtn";
 import Slider from "./heroSlider/Slider";
 import HeroRating from "./HeroRating";
 import { cn } from "@/lib/utils";
+import HeroHead from "./HeroHead";
 
 const Hero = () => {
   return (
@@ -11,16 +12,7 @@ const Hero = () => {
       <section className='my-container'>
         <div className={styles["hero-content"]}>
           <div className={styles["text-group"]}>
-            <div className='flex gap-2 items-center text-center'>
-              <h1 className={styles["eyebrow-text"]}>Chrome Extension</h1>
-            </div>
-
-            <div className={styles.margin}>
-              <h2 className={styles["headline-text"]}>Better History</h2>
-              <h3 className={styles["sub-heading"]}>
-                Organize and Manage Your Browsing History Effortlessly
-              </h3>
-            </div>
+            <HeroHead />
             <div className={styles.margin}>
               <p className={cn("text-pretty", styles["para-text"])}>
                 Welcome to Better History – Your ultimate tool for enhancing

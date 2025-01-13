@@ -24,13 +24,13 @@ export default function Slider() {
         className='mySwiper'
       >
         {[0, 1, 2, 3].map((id) => (
-          <SwiperSlide className='max-w-max' key={id}>
+          <SwiperSlide key={id}>
             <Image
               src='/hero.webp'
               alt='hero'
               height={552}
               width={1000}
-              className='object-cover rounded-[16px] select-none pointer-events-none'
+              className='object-cover rounded-[16px] select-none pointer-events-none w-full'
             />
           </SwiperSlide>
         ))}
