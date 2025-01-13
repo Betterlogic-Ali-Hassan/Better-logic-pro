@@ -1,16 +1,11 @@
 .wrapper {
   margin-top: 56px;
   background-color: white;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.main {
-  grid-column-start: 3;
-  grid-column-end: -3;
-  align-self: auto;
-  display: block;
-  grid-row-start: auto;
-  grid-row-end: auto;
-  z-index: 1;
-}
+
 .wrap {
   background-color: #f7f7f7;
   border-radius: 12px;
@@ -19,7 +14,7 @@
 .image {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
+  transform: translateY(-30px);
   padding-bottom: 20px;
 }
 .img-wrap {
@@ -54,4 +49,16 @@
 }
 .description {
   padding: 0 35px 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    max-width: 1000px;
+  }
 }
