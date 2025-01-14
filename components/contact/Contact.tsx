@@ -35,7 +35,7 @@ const Contact = () => {
       </p>
       <br />
       <form onSubmit={handleSubmit}>
-        <div className='flex flex-col gap-4 mb-8'>
+        <div className='flex flex-col gap-4 mb-6'>
           <input
             id='name'
             type='text'
@@ -67,14 +67,14 @@ const Contact = () => {
           />
         </div>
 
-        <div className='mb-8'>
-          <h3 className='text-xl font-medium mb-6'>
+        <div className='mb-6'>
+          <h3 className='text-xl font-medium mb-4'>
             What kind of your Report?
           </h3>
           <Tabs />
         </div>
 
-        <div className='mb-5'>
+        <div className='mb-6'>
           <Textarea
             id='message'
             name='message'

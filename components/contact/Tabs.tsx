@@ -18,13 +18,13 @@ const Tabs = () => {
 
   return (
     <div>
-      <div className='flex items-center  gap-4 my-4 flex-wrap'>
+      <div className='flex items-center  gap-[10px]  flex-wrap'>
         {tabs.map((tab, index) => (
           <label
             key={index}
             onClick={() => handleTabClick(index)}
             className={cn(
-              "flex items-center justify-center rounded-full bg-transparent text-black  hover:bg-hover p-3 cursor-pointer transition-all duration-200 border-2 border-black hover:text-black font-medium min-w-[160px] text-base",
+              "flex items-center justify-center rounded-[8px] bg-[#f4f4f4] text-black  hover:bg-[#e9e8f3] px-4 cursor-pointer transition-all duration-200 border border-[#c5d6e0] hover:text-black font-normal min-h-[36px] text-sm",
               tab.isActive && "bg-hover text-black"
             )}
           >
