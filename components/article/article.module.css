@@ -6,7 +6,7 @@
   grid-row-start: auto;
   grid-row-end: auto;
   z-index: 1;
-  margin-top: 42px;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
@@ -20,6 +20,7 @@
   border: 1px solid #c5d6e0;
   border-radius: 20px;
   padding: 16px 20px;
+  position: relative;
 }
 .heading {
   font-size: 32px;

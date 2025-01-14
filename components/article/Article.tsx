@@ -8,17 +8,16 @@ const Article = () => {
       <div className={styles.wrapper}>
         <div className={styles["case-wrap"]}>
           <ArticleContent />
+          <h2
+            className={cn(
+              "!my-0  !leading-0 absolute -top-[30px] left-6 bg-white z-20 ",
+              styles.heading2
+            )}
+          >
+            Overview
+          </h2>
         </div>
       </div>
-      <h2
-        className={cn(
-          "!mb-0 !mt-[-14px] leading-0 absolute top-[3px] left-6 bg-white z-20 ",
-          styles.heading2,
-          styles.wrapper
-        )}
-      >
-        Overview
-      </h2>
     </div>
   );
 };
