@@ -14,7 +14,13 @@ const Blog = () => {
         <div className={styles["hero-content"]}>
           <div className={styles["text-group"]}>
             <HeroHead />
-            <span className='mt-1 text-[#5f6368]'>Jan 13, 2025</span>
+            <div className='mt-3'>
+              <h2 className='text-5xl font-light tracking-[-.5px] leading-[56px]'>
+                Chrome Insider: Publishing custom extensions <br /> for the
+                enterprise
+              </h2>
+            </div>
+            <span className='mt-3 text-[#5f6368]'>Jan 13, 2025</span>
           </div>
         </div>
       </section>
@@ -55,6 +61,7 @@ const Blog = () => {
             </div>
           </div>
         </section>
+
         <section className='blog-container'>
           <div className='my-6'>
             <div

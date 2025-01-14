@@ -6,7 +6,7 @@
   grid-row-start: auto;
   grid-row-end: auto;
   z-index: 1;
-  margin-top: 30px;
+  margin-top: 42px;
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
@@ -26,6 +26,21 @@
   font-weight: 300;
   margin-bottom: 28px;
   margin-top: 8px;
+}
+.heading2 {
+  font-weight: 450;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-size: clamp(
+    2.3125rem,
+    -0.5089285714285716rem + 4.408482142857143vw,
+    4.78125rem
+  );
+
+  transform: translate(-0.06em);
+  margin-bottom: 2.5rem;
+  white-space: pre-wrap;
+  font-weight: 300;
 }
 .prose p {
   font-size: 18px;

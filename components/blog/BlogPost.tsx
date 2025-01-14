@@ -21,7 +21,12 @@ const BlogPost = () => {
           that you’ll need to request a developer account (if you don’t have one
           already) and pay a small, one-time fee to publish extensions.
         </p>
-        <h2 className={cn("!my-8", style.heading)}>Get your extension ready</h2>
+        <h2
+          className={cn("!my-8", style.heading)}
+          id='get-your-extension-ready'
+        >
+          Get your extension ready
+        </h2>
         <p>
           Once you’ve created your extension (if you need to, check out this
           tutorial on writing extensions), it’s time to package it up to add it
@@ -39,7 +44,9 @@ const BlogPost = () => {
             need a screenshot if you publish it as unlisted or public.)
           </li>
         </ul>
-        <h2 className={cn("!my-8", style.heading)}>Test your extension</h2>
+        <h2 className={cn("!my-8", style.heading)} id='test-your-extension'>
+          Test your extension
+        </h2>
         <p>You can test your extension by:</p>
         <ul className='list-decimal pl-[44px] mb-2'>
           <li className='mt-4'>
@@ -59,7 +66,10 @@ const BlogPost = () => {
             need a screenshot if you publish it as unlisted or public.)
           </li>
         </ul>
-        <h2 className={cn("!my-8", style.heading)}>
+        <h2
+          className={cn("!my-8", style.heading)}
+          id='create-a-collection-of-extensions'
+        >
           Create a collection of extensions (optional)
         </h2>
         <p>
@@ -107,7 +117,9 @@ const BlogPost = () => {
             need a screenshot if you publish it as unlisted or public.)
           </li>
         </ul>
-        <h2 className={cn("!my-8", style.heading)}>Deploy your extension </h2>
+        <h2 className={cn("!my-8", style.heading)} id='deploy-your-extension'>
+          Deploy your extension{" "}
+        </h2>
         <p>
           Private extensions will require users to be signed in with their
           Google Identity to verify the domain. Unlisted or public extensions

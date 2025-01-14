@@ -14,6 +14,12 @@ const Hero = () => {
           <div className={styles["text-group"]}>
             <HeroHead />
             <div className={styles.margin}>
+              <h2 className={styles["headline-text"]}>Better History</h2>
+              <h3 className={styles["sub-heading"]}>
+                Organize and Manage Your Browsing History Effortlessly
+              </h3>
+            </div>
+            <div className={styles.margin}>
               <p className={cn("text-pretty", styles["para-text"])}>
                 Welcome to Better History – Your ultimate tool for enhancing
                 your browser’s history management. With an intuitive interface
