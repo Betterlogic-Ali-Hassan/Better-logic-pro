@@ -4,7 +4,7 @@ import ArticleContent from "./ArticleContent";
 import { cn } from "@/lib/utils";
 const Article = () => {
   return (
-    <div className='my-container relative mt-12'>
+    <div className='my-container relative mt-14'>
       <div className={styles.wrapper}>
         <div className={styles["case-wrap"]}>
           <ArticleContent />
