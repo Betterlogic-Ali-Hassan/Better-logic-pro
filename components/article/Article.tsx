@@ -10,7 +10,7 @@ const Article = () => {
           <ArticleContent />
           <h2
             className={cn(
-              "!my-0  !leading-0 absolute -top-[30px] left-6 bg-white z-20 ",
+              "!mb-0 min-[1440px]:!mt-[-14px] !mt-1 absolute top-[-38px] left-6 bg-white z-20 ",
               styles.heading2
             )}
           >
